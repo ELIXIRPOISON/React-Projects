@@ -1,0 +1,101 @@
+/* styles.css */
+
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #282828;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centering the section */
+.section-center {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #b1beff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+.lorem-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.lorem-form label {
+  font-size: 1rem;
+  color: #555;
+}
+
+.lorem-form input {
+  width: 60px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.lorem-form input:focus {
+  border-color: #007bff;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #2a2a2a;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Article styles */
+.lorem-text {
+  margin-top: 20px;
+}
+
+.lorem-text p {
+  margin: 15px 0;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  border-left: 4px solid #007bff;
+  padding-left: 10px;
+  color: #444;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .lorem-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .lorem-form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
