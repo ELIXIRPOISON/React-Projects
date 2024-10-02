@@ -1,0 +1,54 @@
+.containerCard{
+    display: flex;
+    width: 60%;
+    height: 125px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding-inline: 50px;
+}
+
+.left{
+    display: flex;
+    gap: 20px;
+}
+.left .details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#remove{
+    width: 60px;
+    color: blueviolet;
+    background-color: white;
+    border: 0;
+}
+#remove:hover{
+    color: rgb(43, 226, 73);
+
+}
+
+.right button{
+    width: 20px;
+    height: 20px;
+    border: 0;
+    background-color: white;
+    color: rgb(4, 4, 167);
+    font-weight: 700;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right button:hover{
+    color: rgb(243, 64, 64);
+}
+
