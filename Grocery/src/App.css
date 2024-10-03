@@ -1,0 +1,14 @@
+#root {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  margin-top: 80px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
