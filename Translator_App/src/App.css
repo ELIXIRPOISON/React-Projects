@@ -1,0 +1,63 @@
+body{
+  width: 100%;
+  height: 100vh;
+  background: #2980B9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.mainContainer{
+  display: flex;
+  gap: 50px;
+  width: 80%;
+  justify-content: center;
+}
+.inputBox{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  
+}
+.Input{
+  width: 400px;
+  min-height: 100px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+.TranslatedText{
+  width: 400px;
+  min-height: 100px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #3c3c3c;
+}
+.btn{
+  background:linear-gradient( 130deg, rgb(70, 138, 240), rgb(74, 130, 251), rgb(0, 119, 255));
+  color: #444242;
+  width: 200px;
+}
+.btn:hover{
+ scale: 1.08;
+ transition: 0.6s;
+}
+.SelectLanguage{
+  height: 35px;
+  border-radius: 5px;
+  background-color: #3c3c3c;
+
+}
