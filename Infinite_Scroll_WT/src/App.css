@@ -1,0 +1,58 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Flex and Grid Setup */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Flexible grid layout */
+  gap: 20px; /* Space between grid items */
+  width: 100%;
+  max-width: 1200px; /* Limit the width of the container */
+  padding: 20px;
+}
+
+.image-container a {
+  display: block; /* Ensure the anchor fills the grid item */
+}
+
+.image-container img {
+  width: 100%; /* Make images fill their container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  object-fit: cover; /* Ensure images cover their container */
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .image-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Further adjustments for very small screens */
+  }
+}
