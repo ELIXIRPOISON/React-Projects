@@ -1,0 +1,221 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+  width: 100vw;
+  font-family: 'Arial', sans-serif;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.box {
+  flex: 1;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* List container */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Employee card design */
+.employee-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #9ffac3;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect on employee items */
+.employee-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Disabled employees (added to team) styling */
+.employee-item.disabled {
+  background-color: #e0e0e0;
+  color: #9e9e9e;
+  pointer-events: none;
+}
+
+/* Employee name and age styling */
+.employee-info {
+  font-size: 1.2rem;
+  color: #34495e;
+  font-weight: 500;
+}
+
+/* ADD and REMOVE button styling */
+.add-btn, .remove-btn {
+  padding: 8px 15px;
+  border-radius: 6px;
+  background-color: #1abc9c;
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Button hover effects */
+.add-btn:hover, .remove-btn:hover {
+  background-color: #16a085;
+}
+
+/* REMOVE button specific styling */
+.remove-btn {
+  background-color: #e74c3c;
+}
+
+/* REMOVE button hover effect */
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Sort button styling */
+.sort-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 15px;
+}
+
+/* Sort button hover effect */
+.sort-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Team member card design */
+.team-member-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #fef9e7;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for team member card */
+.team-member-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Average age paragraph styling */
+p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Responsive design adjustments */
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .box {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .employee-info {
+    font-size: 1.1rem;
+  }
+
+  .add-btn, .remove-btn, .sort-btn {
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+}
+
+/* For smaller devices (phones and small tablets) */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .employee-info {
+    font-size: 1rem;
+  }
+
+  .add-btn, .remove-btn, .sort-btn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .employee-item, .team-member-item {
+    padding: 12px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .employee-item, .team-member-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .add-btn, .remove-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .employee-info {
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .sort-btn {
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+}
