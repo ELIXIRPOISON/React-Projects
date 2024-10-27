@@ -1,0 +1,60 @@
+.header {
+  font-size: 50px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(2px 6px 6px white);
+}
+
+.contacts {
+  font-size: 50px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(2px 6px 6px white);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formLabel {
+  width: 50vw;
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.formInput {
+  width: 50vw;
+  background: lightgrey;
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0px 4px 4px white);
+
+  &:hover,
+  &:focus {
+    background-color: white;
+    border: 1px solid lightgrey;
+  }
+}
+
+.formBtn {
+  color: white;
+  padding: 15px 0;
+  font-size: 15px;
+  margin-top: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background: #00415a;
+  letter-spacing: 0.04em;
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.formBtn:hover,
+.formBtn:focus {
+  filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.7));
+  transform: scale(1.03);
+}
